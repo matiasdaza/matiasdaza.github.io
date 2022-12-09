@@ -5,12 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matías Daza</title>
-    <link href="index.css" rel="stylesheet "/>
+    <!-- Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Personal CSS -->
+    <link href="css/index.css" rel="stylesheet "/>
 </head>
 <body>
-    <main>
-        <p>Ribbit!</p>
-        <h1>Hi i'm Matías Daza.</h1>
-    </main>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MDA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a data-easing="easeInOutQuad" href="#sec-0" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item"> 
+                  <a data-easing="easeInOutQuad" href="#sec-1" class="nav-link" aria-current="page">Me</a>
+                </li>
+                <li class="nav-item">
+                  <a data-easing="easeInOutQuad" href="#sec-2" class="nav-link" aria-current="page">AquaWitchers</a>
+                </li>
+                <li class="nav-item">
+                  <a data-easing="easeInOutQuad" href="#sec-3" class="nav-link" aria-current="page">Fútbol</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="slider-0" id="sec-0">
+            <main>
+                <p>Ribbit!</p>
+                <h1>Hi i'm Matías Daza.</h1>
+                <br>
+                <p>Soy un programador de 30 años de Curacaví, Chile.</p>
+                <p>Fanático de la tecnología, Harry Potter, Halloween y de Colo-Colo</p>
+            </main>
+        </div>
+        
+
+        <div class="container-fluid" >
+            <div class="row flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>SECCION 1</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid" >
+            <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>SECCION 2</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid" >
+            <div class="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>SECCION 3</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Javascript -->
+	<script src="js/smooth-scroll.polyfills.js"></script>
+    <script>
+
+        // Instantiate Scrolls
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+
+        if (document.querySelector('[data-easing]')) {
+            var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
+
+            var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
+            var easeInCubic = new SmoothScroll('[data-easing="easeInCubic"]', {easing: 'easeInCubic'});
+            var easeInQuart = new SmoothScroll('[data-easing="easeInQuart"]', {easing: 'easeInQuart'});
+            var easeInQuint = new SmoothScroll('[data-easing="easeInQuint"]', {easing: 'easeInQuint'});
+
+            var easeInOutQuad = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});
+            var easeInOutCubic = new SmoothScroll('[data-easing="easeInOutCubic"]', {easing: 'easeInOutCubic'});
+            var easeInOutQuart = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
+            var easeInOutQuint = new SmoothScroll('[data-easing="easeInOutQuint"]', {easing: 'easeInOutQuint'});
+
+            var easeOutQuad = new SmoothScroll('[data-easing="easeOutQuad"]', {easing: 'easeOutQuad'});
+            var easeOutCubic = new SmoothScroll('[data-easing="easeOutCubic"]', {easing: 'easeOutCubic'});
+            var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {easing: 'easeOutQuart'});
+            var easeOutQuint = new SmoothScroll('[data-easing="easeOutQuint"]', {easing: 'easeOutQuint'});
+        }
+
+        // // Log scroll events
+        // var logScrollEvent = function (event) {
+        // 	console.log('type:', event.type);
+        // 	console.log('anchor:', event.detail.anchor);
+        // 	console.log('toggle:', event.detail.toggle);
+        // };
+        // document.addEventListener('scrollStart', logScrollEvent, false);
+        // document.addEventListener('scrollStop', logScrollEvent, false);
+        // document.addEventListener('scrollCancel', logScrollEvent, false);
+    </script>
 </body>
 </html>
