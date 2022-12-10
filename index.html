@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- Personal CSS -->
     <link href="css/index.css" rel="stylesheet "/>
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -27,13 +29,16 @@
                   <a data-easing="easeInOutQuad" href="#sec-0" class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item"> 
-                  <a data-easing="easeInOutQuad" href="#sec-1" class="nav-link" aria-current="page">Me</a>
+                  <a data-easing="easeInOutQuad" href="#sec-1" class="nav-link" aria-current="page">Work</a>
                 </li>
                 <li class="nav-item">
                   <a data-easing="easeInOutQuad" href="#sec-2" class="nav-link" aria-current="page">AquaWitchers</a>
                 </li>
                 <li class="nav-item">
                   <a data-easing="easeInOutQuad" href="#sec-3" class="nav-link" aria-current="page">Fútbol</a>
+                </li>
+                <li class="nav-item">
+                	<a data-easing="easeInOutQuad" href="#sec-4" class="nav-link" aria-current="page">About</a>
                 </li>
               </ul>
             </div>
@@ -45,44 +50,124 @@
     <section>
         <div class="slider-0" id="sec-0">
             <main>
-                <p>Ribbit!</p>
-                <h1>Hi i'm Matías Daza.</h1>
-                <br>
-                <p>Soy un programador de 30 años de Curacaví, Chile.</p>
-                <p>Fanático de la tecnología, Harry Potter, Halloween y de Colo-Colo</p>
+                <p style="margin: 0;">Ribbit!</p>
+                <h1 style="margin: 0;">Hi i'm Matías Daza.</h1>
+								<p style="margin: 0;">a.k.a. Aqua_matt</p>
             </main>
         </div>
         
 
         <div class="container-fluid" >
             <div class="row flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>SECCION 1</h1>
-                    </div>
-                </div>
+							<h1 style="margin-bottom: 10px;">Programing...</h1>
+							<p class="fs-5 col-md-12">Soy Licenciado en Ciencia de la computación, actualmente trabajo como analista programador en la <a class="text-muted" href="https://www.uc.cl/">Universidad Católica</a>. Anteriormente trabajé como business analyst en la agencia de marketing <a class="text-muted" href="https://latam.ipgmediabrands.com/">IPG Media Brand</a>.</p>
+							<p class="fs-5 col-md-12">Si bien programo, lo que más me gusta es el manejo de la información, trabajo mucho con bases de datos, PL/SQL, como también herramientas de visualización. </p>
+							
+							<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+								<div class="col-md-4 d-flex align-items-center">
+									<span class="mb-3 mb-md-0 text-muted"> Conoce más de mi carrera profesional.</span>
+								</div>
+								<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+									<li class="ms-3" href="https://github.com/matiasdaza">
+										<i class="bi bi-github"></i>
+									</li>
+									<li class="ms-3">
+										<a class="text-muted" href="https://www.linkedin.com/in/matiasdazaa/">
+											<i class="bi bi-linkedin" style="color: white;	"></i>
+										</a>
+	
+									</li>
+								</ul>
+							</div>
             </div>
         </div>
     
         <div class="container-fluid" >
-            <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>SECCION 2</h1>
-                    </div>
-                </div>
+            <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" style="padding-top: 30px;" > 
+							<div class="row">
+									<div class="col-xs-12" style>
+											<h1>AquaWitchers</h1>
+											<br>
+											<p class="fs-6 col-md-12">Mi emprendimiento cuenta con productos naturales para una vida simple y amigable con el medio ambiente. Conoce nuestros productos: </p>
+									</div>
+							</div>
+
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" style="margin-top: 10px; margin-bottom: 10px;">
+								<!-- Cera -->
+								<div class="col" style="margin-top: 0;">
+									<div class="card shadow-sm">
+										<img src="imagenes/cera.jpeg" style="width:100%">
+				
+										<div class="card-body">
+											<p class="card-text" style="color: black">Cera para el cabello.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Aceite -->
+								<div class="col" style="margin-top: 0;">
+									<div class="card shadow-sm">
+										<img src="imagenes/aceite.jpeg" style="width:100%">
+				
+										<div class="card-body">
+											<p class="card-text" style="color: black">Aceite para barba.</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Peine -->
+								<div class="col" style="margin-top: 0;">
+									<div class="card shadow-sm">
+										<img src="imagenes/peine.jpg" style="width:100%">
+				
+										<div class="card-body">
+											<p class="card-text" style="color: black">Peine para pelo riso y risado.</p>
+										</div>
+									</div>
+								</div>		
+							</div>
+							<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+								<div class="col-md-4 d-flex align-items-center">
+									<span class="mb-3 mb-md-0 text-muted"> Conoce en nuestras redes sociales</span>
+								</div>
+								<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+									<li class="ms-3">
+										<a class="text-muted" href="https://www.instagram.com/aquawitchers/">
+											<i class="bi bi-instagram" style="color: white;	"></i>
+										</a>
+	
+									</li>
+								</ul>
+							</div>
+
             </div>
+
+						
+
         </div>
     
         <div class="container-fluid" >
             <div class="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1>SECCION 3</h1>
+                        <h1>Fútbol</h1>
+												<p>Me encanta ver y hablar de fútbol. Hago videos en <a class="text-muted" href="https://www.tiktok.com/@aqua__matt">tiktok</a> principalmente de mi equpo, Colo-Colo, pero también de fútbol en general.</p>
                     </div>
+										<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aqua__matt" data-unique-id="aqua__matt" data-embed-type="creator" style="max-width: 720px; min-width: 288px; border-radius: 20px;" > <section style="border-radius: 20px;"> <a target="_blank" href="https://www.tiktok.com/@aqua__matt?refer=creator_embed">@aqua__matt</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
                 </div>
             </div>
         </div>
+
+				<div class="container-fluid" >
+					<div class="row flex-items-xs-center slider-4 flex-items-xs-middle" id="sec-4">
+							<div class="row">
+									<div class="col-xs-12">
+											<h1>About</h1>
+											<p>Tengo 30 años, soy papá de Jacinta y esposo de Sandy</p>
+											<p>Me encanta la tecnología, los datos, Harry Potter, Colo-Colo y Halloween.</p>
+									</div>
+							</div>
+					</div>
+			</div>
     </section>
 
 
